@@ -1,7 +1,6 @@
 import torch
 import torch.utils.data as data
 from torch.utils.data import DataLoader
-import trimesh
 import numpy as np
 import os
 import json
@@ -11,7 +10,7 @@ from pytorch3d.structures import Meshes
 from pytorch3d.loss import chamfer_distance
 from pytorch3d.ops import sample_points_from_meshes
 from utils import AverageValueMeter, get_f_score
-from PyTorchEMD.emd import earth_mover_distance
+from external.PyTorchEMD.emd import earth_mover_distance
 from chamfer_distance import ChamferDistance as distChamfer
 
 CD_NUM = 100000
