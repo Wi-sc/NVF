@@ -1,0 +1,24 @@
+name: nvf
+channels:
+  - pytorch3d
+  - anaconda
+  - bottler
+  - iopath
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=11.6.0=hecad31d_10
+  - einops=0.4.1=pyhd8ed1ab_0
+  - igl=2.2.1=py39h86c447d_1
+  - numpy=1.23.5=py39h14f4228_0
+  - pandas=1.4.4=py39h6a678d5_0
+  - pip=22.3.1=py39h06a4308_0
+  - python=3.9.13=haa1d7c7_2
+  - pytorch=1.12.1=py3.9_cuda11.6_cudnn8.3.2_0
+  - pytorch3d=0.7.2=py39_cu116_pyt1121
+  - tensorboard=2.9.0=py39h06a4308_0
+  - torchvision=0.13.1=py39_cu116
+  - yaml=0.2.5=h7b6447c_0
+  - pip:
+    - chamfer-distance==0.1
