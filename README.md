@@ -1,5 +1,5 @@
 # NVF
-Official implementation of neural vector fields. Feel free to use this code for academic work, but please cite the following:
+Official implementation of Neural Vector Fields (NVF). Feel free to use this code for academic work, but please cite the following:
 ```
 @misc{yang2023neural,
       title={Neural Vector Fields: Implicit Representation by Explicit Learning}, 
@@ -11,21 +11,50 @@ Official implementation of neural vector fields. Feel free to use this code for 
 }
 ```
 ## Requirements
-The requirements are PyTotch and Pytorch3D with cuda support:
-A linux system with cuda 10 is required for the project.
+The codes have been tested on the linux Ubuntu=20.00, NVIDA RTX-3090ti system with
+* Python=3.9
+* Pytorch=1.12.1
+* Torchvision=0.13.1
+* CUDA=11.6
 
 Please clone the repository and navigate into it in your terminal, its location is assumed for all subsequent commands.
 
 ## Installation
-The nvf.yml file contains all necessary python dependencies for the project. To conveniently install them automatically with anaconda you can use:
+The nvf.yml file contains all necessary python dependencies for the project. To conveniently install them automatically with anaconda. The commands have been incorperated into create_env.sh. You can directly create the environment via runing the script:
 ```
-conda env create -f NDF_env.yml
-conda activate NDF
-pip install git+'https://github.com/otaheri/chamfer_distance'
-cd external/custom_mc
-python setup.py build_ext --inplace
-cd ../PyTorchEMD
-python setup.py install
-cd ../../models/lib/pointops
-python setup.py install
+bash create_env.sh
 ```
+## Data Preparation
+First, create a configuration file in folder configs/, use configs/shapenet_cars.txt as reference and see configs/config_loader.py for detailed explanation of all configuration options.
+
+Next, prepare the data for NVF using
+```
+python dataprocessing/preprocess.py --config configs/shapenet_cars.txt
+```
+and generate a random test/training/validation split of the data using
+```
+python dataprocessing/create_split.py --config configs/shapenet_cars.txt
+```
+but replacing configs/shapenet_cars.txt in the commands with the desired configuration.
+
+## Training
+To train your NVF, you can change the parameters in the configs and run:
+```
+python train_generalization.py --config ./configs/${exp_name}.txt 2>&1|tee ${save_dir}/log.txt
+```
+In the experiments/ folder you can find an experiment folder containing the model checkpoints, the checkpoint of validation minimum, and a folder containing a tensorboard summary, which can be started at with
+```
+tensorboard --logdir experiments/EXP_NAME/summary/ --host 0.0.0.0
+```
+## Generation
+```
+python generation.py
+```
+## Test
+```
+python test.py
+```
+
+## Contact
+For questions and comments please leave your questions in the issue or contact Xianghui Yang via mail xianghui.yang@sydney.edu.au.
+
