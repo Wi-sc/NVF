@@ -1,0 +1,10 @@
+exp_name = shapenet_cube_offset_generalization_pt_vq_k16
+data_dir = /home/xianghui_yang/data/ShapeNet/ShapeNetV1NDF_CUBE_OFFSET/
+split_file = ""
+input_data_glob = /*.mat
+sample_std_dev = [0.08, 0.02, 0.003]
+sample_ratio = [0.01, 0.49, 0.5]
+batch_size = 6
+lr = 1e-3
+num_sample_points_training = 50000
+query_available_points = 16
