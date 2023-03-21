@@ -20,5 +20,3 @@ dependencies:
   - tensorboard=2.9.0=py39h06a4308_0
   - torchvision=0.13.1=py39_cu116
   - yaml=0.2.5=h7b6447c_0
-  - pip:
-    - git+'http://github.com/otaheri/chamfer_distance'
