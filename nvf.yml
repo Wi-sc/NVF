@@ -21,4 +21,4 @@ dependencies:
   - torchvision=0.13.1=py39_cu116
   - yaml=0.2.5=h7b6447c_0
   - pip:
-    - -e git://github.com/otaheri/chamfer_distance.git#egg=chamfer_distance
+    - git+'http://github.com/otaheri/chamfer_distance'
