@@ -13,3 +13,6 @@ The nvf.yml file contains all necessary python dependencies for the project. To 
 conda env create -f NDF_env.yml
 conda activate NDF
 pip install git+'https://github.com/otaheri/chamfer_distance'
+cd external/custom_mc
+python setup.py build_ext --inplace
+cd ../../

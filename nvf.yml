@@ -9,6 +9,7 @@ channels:
   - defaults
 dependencies:
   - cudatoolkit=11.6.0=hecad31d_10
+  - cython=0.29.25=py39hdbfa776_0
   - einops=0.4.1=pyhd8ed1ab_0
   - igl=2.2.1=py39h86c447d_1
   - numpy=1.23.5=py39h14f4228_0
