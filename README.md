@@ -1,5 +1,5 @@
-# NVF
-<img src="./vis/reconstruction_black.gif" data-canonical-src="./vis/reconstruction_black.gif" width="1600" height="800" />
+# Neural Vector Fields (NVF):
+<img src="./vis/reconstruction_black.gif" data-canonical-src="./vis/reconstruction_black.gif" width="1200" height="700" />
 <img src="./vis/deform.gif" data-canonical-src="./vis/reconstruction_black.gif"/>
 
 Official implementation of Neural Vector Fields (NVF). Feel free to use this code for academic work, but please cite the following:
