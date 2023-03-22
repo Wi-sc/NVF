@@ -1,6 +1,7 @@
 # NVF
-![reconstruction](./vis/reconstruction_black.gif)
-![deform](./vis/deform.gif)
+<img src="./vis/reconstruction_black.gif" data-canonical-src="./vis/reconstruction_black.gif" width="1600" height="800" />
+<img src="./vis/deform.gif" data-canonical-src="./vis/reconstruction_black.gif"/>
+
 Official implementation of Neural Vector Fields (NVF). Feel free to use this code for academic work, but please cite the following:
 ```
 @misc{yang2023neural,
