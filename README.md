@@ -1,4 +1,6 @@
 # NVF
+![reconstruction](./vis/reconstruction.gif=250x250)
+![deform](./vis/deform.gif=250x250)
 Official implementation of Neural Vector Fields (NVF). Feel free to use this code for academic work, but please cite the following:
 ```
 @misc{yang2023neural,
@@ -10,6 +12,11 @@ Official implementation of Neural Vector Fields (NVF). Feel free to use this cod
       primaryClass={cs.CV}
 }
 ```
+[Paper]() -
+[Supplementaty]() -
+[Arxiv](https://arxiv.org/abs/2303.04341) -
+Published in NeurIPS 2020.
+
 ## Requirements
 The codes have been tested on the linux Ubuntu=20.00, NVIDA RTX-3090ti system with
 * Python=3.9
