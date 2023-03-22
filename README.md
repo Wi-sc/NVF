@@ -19,16 +19,17 @@ Official implementation of Neural Vector Fields (NVF). Feel free to use this cod
 Published in NeurIPS 2020.
 
 ## Requirements
-The codes have been tested on the linux Ubuntu=20.00, NVIDA RTX-3090ti system with
+The codes have been tested on the linux Ubuntu 20.04 system with NVIDIA RTX3090ti. The enviroment inlcude:
 * Python=3.9
 * Pytorch=1.12.1
 * Torchvision=0.13.1
 * CUDA=11.6
-
+  
 Please clone the repository and navigate into it in your terminal, its location is assumed for all subsequent commands.
 
 ## Installation
-The nvf.yml file contains all necessary python dependencies for the project. To conveniently install them automatically with anaconda. The commands have been incorperated into create_env.sh. You can directly create the environment via runing the script:
+The nvf.yml file contains all necessary python dependencies for the project. To train the model, relavattive operations in point-transfomrer are needed. To extract meshes, meshUDF is needed. To test the model, pytorch3D, chamfer distance, earth mover distance are needed. 
+The commands have been incorperated into create_env.sh. You can conveniently create the environment and install them with anaconda via runing the script:
 ```
 bash create_env.sh
 ```
@@ -65,4 +66,7 @@ python test.py
 
 ## Contact
 For questions and comments please leave your questions in the issue or contact Xianghui Yang via mail xianghui.yang@sydney.edu.au.
+
+## Acknowledge
+The code is modified from the [NDF](https://github.com/jchibane/ndf).
 
