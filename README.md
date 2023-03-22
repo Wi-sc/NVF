@@ -1,5 +1,5 @@
 # NVF
-![reconstruction](./vis/reconstruction.gif)
+![reconstruction](./vis/reconstruction_black.gif)
 ![deform](./vis/deform.gif)
 Official implementation of Neural Vector Fields (NVF). Feel free to use this code for academic work, but please cite the following:
 ```
