@@ -2,7 +2,7 @@ import sys
 sys.path.append("./")
 import models.local_model_offset_point_transformer_vq as model
 import models.data.voxelized_data_shapenet_cube_offset_generalization_points as voxelized_data
-from models import training_attenion_mean_loss as training
+from models import training_vq as training
 import torch
 import configs.config_loader as cfg_loader
 
