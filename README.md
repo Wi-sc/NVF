@@ -63,7 +63,7 @@ To train your NVF, you can change the parameters in the configs and run:
 ```
 python train_generalization.py --config ./configs/${exp_name}.txt 2>&1|tee ${save_dir}/log.txt
 ```
-In the experiments/ folder you can find an experiment folder containing the model checkpoints, the checkpoint of validation minimum, and a folder containing a tensorboard summary, which can be started at with
+In the `experiments/ `folder you can find an experiment folder containing the model checkpoints, the checkpoint of validation minimum, and a folder containing a tensorboard summary, which can be started at with
 ```
 tensorboard --logdir experiments/EXP_NAME/summary/ --host 0.0.0.0
 ```
