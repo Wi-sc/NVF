@@ -37,7 +37,7 @@ There are other dependencies to be installed.
 
 1. To train the model, relavattive operations in point-transfomrer are needed. 
 2. To extract meshes, meshUDF is needed. 
-3. To test the model, pytorch3D, chamfer distance, earth mover distance are needed. 
+3. To test the model, libaries for pytorch3D, chamfer distance, earth mover distance are needed. 
 
 The commands have been incorperated into 'create_env.sh'. You install them with anaconda via runing the script:
 ```
