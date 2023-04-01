@@ -18,7 +18,7 @@ class VoxelizedDataset(Dataset):
         assert np.sum(self.sample_distribution) == 1
         assert np.any(self.sample_distribution < 0) == False
         assert len(self.sample_distribution) == len(self.sample_sigmas)
-        with open('/home/xianghui_yang/data/ShapeNet/id2cat.json', 'r') as file:
+        with open('/home/xianghui_yang/NVF/id2cat.json', 'r') as file:
             idx2cat = json.load(file)
         self.path = data_path
         self.data = []
