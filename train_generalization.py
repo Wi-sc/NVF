@@ -8,7 +8,7 @@ import configs.config_loader as cfg_loader
 
 
 cfg = cfg_loader.get_config()
-net = model.NDF(k=cfg.query_available_points)
+net = model.NVF(k=cfg.query_available_points)
 print(cfg)
 print(net)
 

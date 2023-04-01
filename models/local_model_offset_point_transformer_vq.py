@@ -5,9 +5,9 @@ from models.point_transformer import pointtransformer_seg_repro as encoder
 from pytorch3d.ops import knn_points, knn_gather
 from models.vector_quantizer import VectorQuantize
 
-class NDF(nn.Module):
+class NVF(nn.Module):
     def __init__(self, hidden_dim=256, k=8, pos_dim=128, out_dim=128, codebook_size=128, heads=4):
-        super(NDF, self).__init__()
+        super(NVF, self).__init__()
         self.k_nearest  = k
         self.pc_encoder = encoder(c=3, k=out_dim)
         self.codebook_size = codebook_size
@@ -56,7 +56,7 @@ if __name__=="__main__":
     device = torch.device("cuda:0")
     points = torch.rand(4, 10000, 3).to(device)
     query_points = torch.rand(4, 50000, 3).to(device)
-    model = NDF().to(device)
+    model = NVF().to(device)
     prediction, loss_vq, perplexity = model(query_points, points)
     print(prediction.shape)
     print(loss_vq.shape, loss_vq)
