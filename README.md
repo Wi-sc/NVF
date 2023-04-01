@@ -28,28 +28,35 @@ The codes have been tested on the linux Ubuntu 20.04 system with NVIDIA RTX3090t
 Please clone the repository and navigate into it in your terminal, its location is assumed for all subsequent commands.
 
 ## Installation
-The nvf.yml file contains all necessary python dependencies for the project. You can conveniently create the environment. 
+The `nvf.yml` file contains all necessary python dependencies for the project. You can create the environment using it. 
 ```
 conda env create -f nvf.yml
 conda activate nvf
 ```
-To train the model, relavattive operations in point-transfomrer are needed. To extract meshes, meshUDF is needed. To test the model, pytorch3D, chamfer distance, earth mover distance are needed. 
-The commands have been incorperated into create_env.sh. You install them with anaconda via runing the script:
+There are other dependencies to be installed.
+
+1. To train the model, relavattive operations in point-transfomrer are needed. 
+2. To extract meshes, meshUDF is needed. 
+3. To test the model, pytorch3D, chamfer distance, earth mover distance are needed. 
+
+The commands have been incorperated into 'create_env.sh'. You install them with anaconda via runing the script:
 ```
 bash create_env.sh
 ```
+Or you can install step by step by yourself.
+
 ## Data Preparation
-First, create a configuration file in folder configs/, use configs/shapenet_cars.txt as reference and see configs/config_loader.py for detailed explanation of all configuration options. Change the dirseired save dirctory in using `SAVE_DIR` in `create_split_generalization.py`, `convert_to_scaled_off.py ` and `boundary_sampling.py`.
+First, create a configuration file in folder `configs/`, use `configs/shapenet_cube_offset_generalization_pt_vq_k16.txt` as reference and see configs/config_loader.py for detailed explanation of all configuration options. Change the dirseired save dirctory in using `SAVE_DIR` in `create_split_generalization.py`, `convert_to_scaled_off.py ` and `boundary_sampling.py`. Please move the split files from `data` to your desired `SAVE_DIR`.
 
 Next, prepare the data for NVF using
 ```
 python dataprocessing/preprocess.py --config configs/shapenet_cube_offset_generalization_pt_vq_k16.txt
 ```
-and generate a random test/training/validation split of the data using
+You can generate a random test/training/validation split of the data using
 ```
 python dataprocessing/create_split.py --config configs/shapenet_cube_offset_generalization_pt_vq_k16.txt
 ```
-but replacing configs/shapenet_cube_offset_generalization_pt_vq_k16.txt in the commands with the desired configuration.
+but replacing `configs/shapenet_cube_offset_generalization_pt_vq_k16.txt` in the commands with the desired configuration.
 
 ## Training
 To train your NVF, you can change the parameters in the configs and run:
