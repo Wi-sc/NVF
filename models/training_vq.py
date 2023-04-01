@@ -75,8 +75,6 @@ class Trainer(object):
             sum_loss = 0
             print('Start epoch {}'.format(epoch))
             print('Current Lr: ', self.lr_scheduler.get_last_lr()[0])
-            print("Current mean", self.model.vector_quantizer._codebook.embed[0, 0, :])
-            print("Current sigma", self.model.vector_quantizer._codebook.sigma_codebook[0, 0, :])
             for i, batch in enumerate(train_data_loader):
                 #save model
                 iteration_duration = time.time() - iteration_start_time
