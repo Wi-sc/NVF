@@ -28,13 +28,13 @@ The codes have been tested on the linux Ubuntu 20.04 system with NVIDIA RTX3090t
 Please clone the repository and navigate into it in your terminal, its location is assumed for all subsequent commands.
 
 ## Installation
-The nvf.yml file contains all necessary python dependencies for the project. 
+The nvf.yml file contains all necessary python dependencies for the project. You can conveniently create the environment. 
 ```
 conda env create -f nvf.yml
 conda activate nvf
 ```
 To train the model, relavattive operations in point-transfomrer are needed. To extract meshes, meshUDF is needed. To test the model, pytorch3D, chamfer distance, earth mover distance are needed. 
-The commands have been incorperated into create_env.sh. You can conveniently create the environment and install them with anaconda via runing the script:
+The commands have been incorperated into create_env.sh. You install them with anaconda via runing the script:
 ```
 bash create_env.sh
 ```
