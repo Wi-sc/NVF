@@ -1,4 +1,4 @@
-conda env create -f NDF_env.yml
+conda env create -f nvf.yml
 conda activate NDF
 pip install git+'https://github.com/otaheri/chamfer_distance'
 cd external/custom_mc
