@@ -13,12 +13,12 @@ import configs.config_loader as cfg_loader
 
 # number of distance field samples generated per object
 sample_num = 100000
-save_dir = "/home/xianghui_yang/data/NVF_data/"
+SAVE_DIR = "/home/xianghui_yang/data/NVF_data/"
 def boundary_sampling(path, sigma):
     try:
         cat_idx = path.split("/")[-3]
         file_name = path.split("/")[-2]
-        out_path = save_dir + cat_idx
+        out_path = SAVE_DIR + cat_idx
         
         input_file = os.path.join(out_path, file_name + '.obj')
         if not os.path.exists(os.path.join(out_path, file_name)):

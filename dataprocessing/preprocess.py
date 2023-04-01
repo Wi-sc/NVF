@@ -36,8 +36,8 @@ multiprocess(to_off)
 print('Start distance field sampling.')
 for sigma in cfg.sample_std_dev:
 	print(f'Start distance field sampling with sigma: {sigma}.')
-	#multiprocess(partial(boundary_sampling, sigma = sigma))
+	multiprocess(partial(boundary_sampling, sigma = sigma))
 	# this process is multi-processed for each path: IGL parallelizes the distance field computation of multiple points.
-	for path in paths:
-		boundary_sampling(path, sigma)
+	# for path in paths:
+	# 	boundary_sampling(path, sigma)
 

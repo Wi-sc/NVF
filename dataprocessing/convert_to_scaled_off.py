@@ -10,9 +10,10 @@ import logging
 import configs.config_loader as cfg_loader
 
 
+SAVE_DIR = "/home/xianghui_yang/data/NVF_data/"
+
 logger = logging.getLogger()
 logger.setLevel(logging.ERROR)
-save_dir = "/home/xianghui_yang/data/NVF_data/"
 
 class HiddenPrints:
     def __enter__(self):
@@ -51,11 +52,11 @@ def to_off(path):
     # file_name = os.path.splitext(os.path.basename(path))[0]
     file_name = path.split("/")[-2]
     cat_idx = path.split("/")[-3]
-    output_file = os.path.join(save_dir, cat_idx, file_name + '.obj')
+    output_file = os.path.join(SAVE_DIR, cat_idx, file_name + '.obj')
     print("Save to:", output_file)
 
-    if not os.path.exists(os.path.join(save_dir, cat_idx)):
-        os.mkdir(os.path.join(save_dir, cat_idx))
+    if not os.path.exists(os.path.join(SAVE_DIR, cat_idx)):
+        os.mkdir(os.path.join(SAVE_DIR, cat_idx))
 
     if os.path.isfile(output_file):
         print('Exists: {}'.format(output_file))
