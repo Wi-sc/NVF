@@ -8,6 +8,7 @@ import multiprocessing as mp
 from multiprocessing import Pool
 import numpy as np
 import os
+from functools import partial
 
 cfg = cfg_loader.get_config()
 # cls_idx_list = ["02958343", "03001627", "02691156", "03691459", "02828884", "04530566", "03636649", "04379243"] # [car, chair, plane, speaker, bench, watercraft, lamp, table]
