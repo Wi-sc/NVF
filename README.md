@@ -39,7 +39,7 @@ The commands have been incorperated into create_env.sh. You install them with an
 bash create_env.sh
 ```
 ## Data Preparation
-First, create a configuration file in folder configs/, use configs/shapenet_cars.txt as reference and see configs/config_loader.py for detailed explanation of all configuration options.
+First, create a configuration file in folder configs/, use configs/shapenet_cars.txt as reference and see configs/config_loader.py for detailed explanation of all configuration options. Change the dirseired save dirctory in using `SAVE_DIR` in `create_split_generalization.py`, `convert_to_scaled_off.py ` and `boundary_sampling.py`.
 
 Next, prepare the data for NVF using
 ```
