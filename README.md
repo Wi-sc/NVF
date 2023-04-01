@@ -46,7 +46,7 @@ bash create_env.sh
 Or you can install step by step by yourself.
 
 ## Data Preparation
-First, create a configuration file in folder `configs/`, use `configs/shapenet_cube_offset_generalization_pt_vq_k16.txt` as reference and see configs/config_loader.py for detailed explanation of all configuration options. Change the dirseired save dirctory in using `SAVE_DIR` in `create_split_generalization.py`, `convert_to_scaled_off.py ` and `boundary_sampling.py`. Please also make sure to move the split files `split_generalization_*.npz` from `dataprocessing` to your desired `SAVE_DIR`.
+First, create a configuration file in folder `configs/`, use `configs/shapenet_cube_offset_generalization_pt_vq_k16.txt` as reference and see configs/config_loader.py for detailed explanation of all configuration options. Change the desired data directory with variable `SAVE_DIR` in `create_split_generalization.py`, `convert_to_scaled_off.py ` and `boundary_sampling.py`. Please also make sure to move the split files `split_generalization_*.npz` from `dataprocessing` to your desired `SAVE_DIR`.
 
 Next, prepare the data for NVF using
 ```
