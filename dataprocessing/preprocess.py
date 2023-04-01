@@ -11,8 +11,7 @@ import os
 from functools import partial
 
 cfg = cfg_loader.get_config()
-# cls_idx_list = ["02958343", "03001627", "02691156", "03691459", "02828884", "04530566", "03636649", "04379243"] # [car, chair, plane, speaker, bench, watercraft, lamp, table]
-cls_idx_list = ["04379243"]
+cls_idx_list = ["02958343", "03001627", "02691156", "03691459", "02828884", "04530566", "03636649", "04379243"] # [car, chair, plane, speaker, bench, watercraft, lamp, table]
 print('Finding raw files for preprocessing.')
 
 paths = []

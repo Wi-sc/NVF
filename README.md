@@ -68,13 +68,17 @@ In the experiments/ folder you can find an experiment folder containing the mode
 tensorboard --logdir experiments/EXP_NAME/summary/ --host 0.0.0.0
 ```
 ## Generation
+To generate meshes after training:
 ```
 python generation.py
 ```
+Please specify the desired model before running.
 ## Test
+To test results after generation:
 ```
 python test.py
 ```
+Please specify the desired experiment name before running.
 
 ## Contact
 For questions and comments please leave your questions in the issue or contact Xianghui Yang via mail xianghui.yang@sydney.edu.au.
