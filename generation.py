@@ -98,7 +98,7 @@ class Generator():
         return filtered_mesh
 
 
-MODEL_DIR = '/home/xianghui_yang/ndf/experiments/shapenet_cube_offset_generalization_pt_k16_mean_loss_2_curl/'
+MODEL_DIR = '/home/xianghui_yang/ndf/experiments/shapenet_cube_offset_generalization_pt_k16/'
 best_model = "checkpoint_279_113h:0m:32s_406832.6937339306.tar"
 MODEL_NAME = 'checkpoints/%s'%best_model
 OUTPUT_DIR = os.path.join(MODEL_DIR, 'mesh')
