@@ -11,7 +11,8 @@ from pytorch3d.loss import chamfer_distance
 from pytorch3d.ops import sample_points_from_meshes
 from utils import AverageValueMeter, get_f_score
 from external.PyTorchEMD.emd import earth_mover_distance
-from chamfer_distance import ChamferDistance as distChamfer
+from chamfer_distance import ChamferDistance as chamfer_dist
+distChamfer = chamfer_dist()
 
 CD_NUM = 100000
 EMD_NUM = 2048
