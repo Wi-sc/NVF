@@ -47,13 +47,13 @@ class TestDataset(data.Dataset):
         
         self.file_list = []
         if len(categories)==1:
-            data_np = np.load("/home/xianghui_yang/data/ShapeNet/ShapeNetV1NDF_CUBE_OFFSET/split_02958343.npz")['test']
+            data_np = np.load("/home/xianghui_yang/data/NVF_data/split_02958343.npz")['test']
             for fn in data_np:
                 self.file_list.append((fn, "car", "02958343"))
         else:
             for cat in categories:
                 idx = self.cls2idx[cat]
-                data_np = np.load("/home/xianghui_yang/data/ShapeNet/ShapeNetV1NDF_CUBE_OFFSET/split_generalization_%s.npz"%(idx))['test']
+                data_np = np.load("/home/xianghui_yang/data/NVF_data/split_generalization_%s.npz"%(idx))['test']
                 for fn in data_np:
                     self.file_list.append((fn, cat, idx))
 
