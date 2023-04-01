@@ -16,7 +16,7 @@ Official implementation of Neural Vector Fields (NVF). Feel free to use this cod
 [Paper]() -
 [Supplementaty]() -
 [Arxiv](https://arxiv.org/abs/2303.04341) -
-Published in NeurIPS 2020.
+Published in CVPR 2023.
 
 ## Requirements
 The codes have been tested on the linux Ubuntu 20.04 system with NVIDIA RTX3090ti. The enviroment inlcude:
@@ -38,13 +38,13 @@ First, create a configuration file in folder configs/, use configs/shapenet_cars
 
 Next, prepare the data for NVF using
 ```
-python dataprocessing/preprocess.py --config configs/shapenet_cars.txt
+python dataprocessing/preprocess.py --config configs/shapenet_cube_offset_generalization_pt_vq_k16.txt
 ```
 and generate a random test/training/validation split of the data using
 ```
-python dataprocessing/create_split.py --config configs/shapenet_cars.txt
+python dataprocessing/create_split.py --config configs/shapenet_cube_offset_generalization_pt_vq_k16.txt
 ```
-but replacing configs/shapenet_cars.txt in the commands with the desired configuration.
+but replacing configs/shapenet_cube_offset_generalization_pt_vq_k16.txt in the commands with the desired configuration.
 
 ## Training
 To train your NVF, you can change the parameters in the configs and run:
