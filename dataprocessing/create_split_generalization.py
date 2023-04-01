@@ -6,8 +6,8 @@ from collections import defaultdict
 
 shapenetv1_dir = "/home/xianghui_yang/data/ShapeNet/ShapeNetCore.v1"
 save_dir = "/home/xianghui_yang/data/NVF_data"
-cls_idx_list = ["02958343", "03001627", "02691156", "03691459", "02828884", "04530566", "03636649", "04379243"] # [car, chair, plane, speaker, bench, watercraft, lamp, table]
-
+# cls_idx_list = ["02958343", "03001627", "02691156", "03691459", "02828884", "04530566", "03636649", "04379243"] # [car, chair, plane, speaker, bench, watercraft, lamp, table]
+cls_idx_list = ["04379243"]
 for cls_idx in cls_idx_list:
     train_all = []
     test_all = []
