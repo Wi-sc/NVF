@@ -2,6 +2,7 @@ import sys
 sys.path.append("../NVF")
 from dataprocessing.convert_to_scaled_off import to_off
 from dataprocessing.boundary_sampling import boundary_sampling
+import dataprocessing.voxelized_pointcloud_sampling as voxelized_pointcloud_sampling
 from glob import glob
 import configs.config_loader as cfg_loader
 import multiprocessing as mp
@@ -43,3 +44,6 @@ for sigma in cfg.sample_std_dev:
 	# for path in paths:
 	# 	boundary_sampling(path, sigma)
 
+print('Start voxelized pointcloud sampling.')
+voxelized_pointcloud_sampling.init(cfg)
+multiprocess(voxelized_pointcloud_sampling.voxelized_pointcloud_sampling)
