@@ -81,7 +81,7 @@ python test.py
 Please specify the desired experiment name before running.
 
 ## Contact
-For questions and comments please leave your questions in the issue or contact Xianghui Yang via mail xianghui.yang@sydney.edu.au.
+For questions and comments please leave your questions in the issue or contact Xianghui Yang via email xianghui.yang@sydney.edu.au.
 
 ## Acknowledge
 The code is modified from the [NDF](https://github.com/jchibane/ndf). Thanks for open-sourcing.
