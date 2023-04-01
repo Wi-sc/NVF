@@ -31,7 +31,9 @@ def multiprocess(func):
 	p.join()
 
 print('Start scaling.')
-multiprocess(to_off)
+# multiprocess(to_off)
+for cur_p in paths:
+	to_off(cur_p)
 
 print('Start distance field sampling.')
 for sigma in cfg.sample_std_dev:
