@@ -23,7 +23,7 @@ for cls_idx in cls_idx_list:
 	print("Total number:", len(paths))
 
 
-num_cpus = 2
+num_cpus = 4
 def multiprocess(func):
 	p = Pool(num_cpus)
 	p.map(func, paths)
