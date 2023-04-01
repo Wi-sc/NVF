@@ -1,5 +1,5 @@
 exp_name = shapenet_cube_offset_generalization_pt_vq_k16
-data_dir = /home/xianghui_yang/data/ShapeNet/ShapeNetV1NDF_CUBE_OFFSET
+data_dir = /home/xianghui_yang/NVF_data
 split_file = ""
 input_data_glob = /*.mat
 sample_std_dev = [0.08, 0.02, 0.003]

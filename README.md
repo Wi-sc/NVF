@@ -35,9 +35,9 @@ conda activate nvf
 ```
 There are other dependencies to be installed.
 
-1. To train the model, relavattive operations in point-transfomrer are needed. 
-2. To extract meshes, meshUDF is needed. 
-3. To test the model, libaries for pytorch3D, chamfer distance, earth mover distance are needed. 
+1. To train the model, relavattive operations in [point-transfomrer](https://github.com/POSTECH-CVLab/point-transformer) are needed. 
+2. To extract meshes, [meshUDF](https://github.com/cvlab-epfl/MeshUDF) is needed. 
+3. To test the model, libaries for [chamfer distance](https://github.com/otaheri/chamfer_distance), [earth mover distance](https://github.com/daerduoCarey/PyTorchEMD) are needed. 
 
 The commands have been incorperated into 'create_env.sh'. You install them with anaconda via runing the script:
 ```
@@ -84,5 +84,5 @@ Please specify the desired experiment name before running.
 For questions and comments please leave your questions in the issue or contact Xianghui Yang via mail xianghui.yang@sydney.edu.au.
 
 ## Acknowledge
-The code is modified from the [NDF](https://github.com/jchibane/ndf).
+The code is modified from the [NDF](https://github.com/jchibane/ndf). Thanks for open-sourcing.
 
