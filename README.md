@@ -28,7 +28,7 @@ The codes have been tested on the linux Ubuntu 20.04 system with NVIDIA RTX3090t
 Please clone the repository and navigate into it in your terminal, its location is assumed for all subsequent commands.
 
 ## Installation
-The `nvf.yml` file contains all necessary python dependencies for the project. You can create the environment using it. 
+The `nvf.yml` file contains all necessary python dependencies for the project. You can create the anaconda environment using: 
 ```
 conda env create -f nvf.yml
 conda activate nvf
@@ -39,7 +39,7 @@ There are other dependencies to be installed.
 2. To extract meshes, [meshUDF](https://github.com/cvlab-epfl/MeshUDF) is needed. 
 3. To test the model, libaries for [chamfer distance](https://github.com/otaheri/chamfer_distance), [earth mover distance](https://github.com/daerduoCarey/PyTorchEMD) are needed. 
 
-The commands have been incorperated into 'create_env.sh'. You install them with anaconda via runing the script:
+The commands have been incorperated by `create_env.sh`. You can install them via runing the script:
 ```
 bash create_env.sh
 ```
