@@ -13,8 +13,9 @@ Official implementation of Neural Vector Fields (NVF). Feel free to use this cod
       primaryClass={cs.CV}
 }
 ```
-[Paper]() -
-[Supplementaty]() -
+[CVF](https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Neural_Vector_Fields_Implicit_Representation_by_Explicit_Learning_CVPR_2023_paper.html)
+[Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Neural_Vector_Fields_Implicit_Representation_by_Explicit_Learning_CVPR_2023_paper.pdf) -
+[Supplementaty](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Yang_Neural_Vector_Fields_CVPR_2023_supplemental.pdf) -
 [Arxiv](https://arxiv.org/abs/2303.04341) -
 Published in CVPR 2023.
 
