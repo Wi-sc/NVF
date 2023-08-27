@@ -78,7 +78,7 @@ To test results after generation:
 ```
 python test.py
 ```
-Please specify the desired experiment name before running.
+Please specify the desired experiment name before running. The model for non-watertight shape and garment has been uploaded and you can download it [here](https://drive.google.com/file/d/1r5a8dBYa-4itcy0QgDqTQ6l2G9_ljvhp/view?usp=drive_link).
 
 ## Contact
 For questions and comments please leave your questions in the issue or contact Xianghui Yang via email xianghui.yang@sydney.edu.au.
